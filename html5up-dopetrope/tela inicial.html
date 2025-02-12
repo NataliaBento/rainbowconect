@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <!-- Lado esquerdo: Imagem -->
+      <!-- Lado esquerdo: Imagem (Mantendo sua configuração) -->
       <div class="left">
-        <img src="logo.png" alt="Logo da Empresa" />
+        <img src="images/logo2.png" alt="Logo da Empresa" />
       </div>
 
       <!-- Lado direito: Login -->
@@ -23,16 +23,34 @@
 
         <form>
           <div class="input-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" />
+            <label for="identifier" id="identifierLabel">E-mail</label>
+            <input
+              type="text"
+              id="identifier"
+              placeholder="Digite seu e-mail"
+            />
           </div>
 
           <div class="input-group">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" />
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
           </div>
 
           <button type="submit">Entrar</button>
+
+          <!-- Botão de login com Google (Aparece apenas para Viajante) -->
+          <button type="button" id="googleLogin" class="google-btn">
+            Entrar com Google
+          </button>
+
+          <!-- Aviso de cadastro -->
+          <p class="register-message">
+            Ainda não tem cadastro? <a href="#">Clique aqui e cadastre-se</a>
+          </p>
         </form>
       </div>
     </div>
