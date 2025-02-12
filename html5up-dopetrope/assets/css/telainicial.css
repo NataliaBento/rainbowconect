@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Lado esquerdo: Imagem */
+.left {
+  width: 50%;
+  height: 100%;
+  background: url("logo.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* Lado direito: Formulário */
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+/* Botão deslizante */
+.toggle-container {
+  width: 300px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  width: 50%;
+  height: 100%;
+  background: #2d89ef;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Inputs e Botão */
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #2d89ef;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1c6dd0;
+}
