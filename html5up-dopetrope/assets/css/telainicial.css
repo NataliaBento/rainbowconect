@@ -17,7 +17,7 @@ html {
   width: 100vw;
 }
 
-/* Mantendo sua configuração de imagem */
+/* Lado esquerdo: Imagem */
 .left {
   width: 50%;
   height: 100%;
@@ -53,23 +53,41 @@ html {
   border-radius: 20px;
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 5px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.option-left,
+.option-right {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.option-left {
+  left: 10px;
+  color: #2d89ef;
+}
+
+.option-right {
+  right: 10px;
+  color: #2e3192;
 }
 
 .toggle-btn {
   width: 50%;
   height: 100%;
-  background: #e7467f;
-  color: white;
-  text-align: center;
-  line-height: 40px;
-  font-weight: bold;
+  background: #2d89ef;
   border-radius: 20px;
   position: absolute;
   transition: 0.3s ease;
+  z-index: 0;
 }
 
 /* Inputs e Botão */
@@ -136,4 +154,33 @@ button:hover {
 
 .register-message a:hover {
   text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    height: 35vh;
+  }
+
+  .right {
+    padding: 15px;
+  }
 }
