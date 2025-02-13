@@ -1566,6 +1566,7 @@ input, select, textarea {
 		margin: 2.25em 0 0 0;
 	}
 
+	
 /* Box */
 
 	.box {
@@ -1687,6 +1688,12 @@ input, select, textarea {
 			padding: 0.75em 1.5em 0.75em 1.5em;
 		}
 
+		.button.alt {
+			background-color: #29ABE2; 
+			color: #fff;
+		}
+		
+		
 /* Image */
 
 	.image {
@@ -2184,7 +2191,7 @@ input, select, textarea {
 }
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: orange;
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
