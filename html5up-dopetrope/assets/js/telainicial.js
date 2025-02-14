@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    window.location.href = "index.html?perfil=" + perfil;
+  
+    if (perfil === "empreendedor") {
+      window.location.href = "indexempreendedor.html"; 
+    } else {
+      window.location.href = "index.html"; 
+    }
   });
+  
 });

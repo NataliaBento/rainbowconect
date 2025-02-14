@@ -175,6 +175,52 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	#banner {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background: url("../images/logodemenu.png") no-repeat center center;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  
+	 
+	  .menu-banner {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		display: flex;
+		gap: 20px;
+	  }
+	  
+	  .menu-banner a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 16px;
+		background: #302F90;
+		padding: 8px 15px;
+		border-radius: 5px;
+		transition: background 0.3s ease;
+	  }
+	  
+	  .menu-banner a:hover {
+		background: #E53359;
+	  }
+
+	  .logo-container {
+		position: absolute;
+		top: 20px;
+		left: 30px;
+	  }
+	  
+	  .logo {
+		height: 250px; /* Ajuste o tamanho da logo conforme necessário */
+	  }
+
+
 /* Container */
 
 	.container {
