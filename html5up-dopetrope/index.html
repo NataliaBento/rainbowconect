@@ -8,8 +8,21 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/acessibilidade.css">
   </head>
   <body class="homepage is-preload">
+        <!-- Botão de Acessibilidade -->
+<button id="acessibilidadeBtn" class="acessibilidade-btn">♿</button>
+
+<!-- Menu de Acessibilidade -->
+<div id="acessibilidadeMenu" class="acessibilidade-menu">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
+    <button onclick="resetarAcessibilidade()">Redefinir</button>
+</div>
     <div id="page-wrapper">
        <!-- Header -->
        <section id="header" style="background-color: #302F90;">
@@ -328,5 +341,6 @@ JC
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/css/acessibilidade.css"></script>
   </body>
 </html>

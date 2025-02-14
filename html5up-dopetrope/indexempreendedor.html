@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Rainbow Connect</title>
@@ -13,49 +8,38 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/acessibilidade.css">
   </head>
   <body class="homepage is-preload">
+        <!-- Botão de Acessibilidade -->
+<button id="acessibilidadeBtn" class="acessibilidade-btn">♿</button>
+
+<!-- Menu de Acessibilidade -->
+<div id="acessibilidadeMenu" class="acessibilidade-menu">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
+    <button onclick="resetarAcessibilidade()">Redefinir</button>
+</div>
     <div id="page-wrapper">
-      <!-- Header -->
-      <section id="header">
-        <!-- Logo -->
-        <h1><a href="index.html">Rainbow Connect</a></h1>
-
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li>
-              <a href="#">Dropdown</a>
-              <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
-                <li>
-                  <a href="#">Phasellus consequat</a>
-                  <ul>
-                    <li><a href="#">Magna phasellus</a></li>
-                    <li><a href="#">Etiam dolore nisl</a></li>
-                    <li><a href="#">Veroeros feugiat</a></li>
-                    <li><a href="#">Nisl sed aliquam</a></li>
-                    <li><a href="#">Dolore adipiscing</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Veroeros feugiat</a></li>
-              </ul>
-            </li>
-            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
-          </ul>
-        </nav>
-
+       <!-- Header -->
+       <section id="header">
+        <h1 style="color: #E53359; margin: 24px;">Seu Empreendimento anunciado com orgulho!</h1>
         <!-- Banner -->
         <section id="banner">
-          <header>
-            <h2>Rainbow Connect</h2>
-            <p>Lorem ipsum dolor sit</p>
-          </header>
+          <!-- Menu no banner -->
+          <nav class="menu-banner">
+            <a href="#main">Categorias</a>
+            <a href="#footer">Eventos</a>
+            <a href="#major">Sobre</a>
+          </nav>
+          
+          <div class="logo-container">
+            <img src="images/logosemfundo.png" alt="Rainbow Connect Logo" class="logo">
+          </div>
+
         </section>
 
         <!-- Intro -->
@@ -65,11 +49,13 @@
               <section class="first">
                 <i class="icon solid featured fa-cog"></i>
                 <header>
-                  <h2>Ipsum consequat</h2>
+                  <h2>Plano Básico</h2>
                 </header>
                 <p>
-                  Nisl amet dolor sit ipsum veroeros sed blandit consequat
-                  veroeros et magna tempus.
+                  Alcance mais clientes e aumente sua visibilidade com nosso plano básico de impulsionamento.<br>
+                  ✅ Mais visibilidade para seu negócio <br>
+                  ✅ Anúncios estratégicos na plataforma <br>
+                  ✅ Custo acessível, benefícios reais!
                 </p>
               </section>
             </div>
@@ -77,11 +63,13 @@
               <section class="middle">
                 <i class="icon solid featured alt fa-bolt"></i>
                 <header>
-                  <h2>Magna etiam dolor</h2>
+                  <h2>Plano Ouro</h2>
                 </header>
                 <p>
-                  Nisl amet dolor sit ipsum veroeros sed blandit consequat
-                  veroeros et magna tempus.
+                  Plano Ouro, você garante o máximo de visibilidade e impulsionamento exclusivo para seu negócio. <br>
+                  ✅ Posição de destaque nas buscas e categorias <br>
+                  ✅ Anúncios premium para um público segmentado <br>
+
                 </p>
               </section>
             </div>
@@ -89,24 +77,26 @@
               <section class="last">
                 <i class="icon solid featured alt2 fa-star"></i>
                 <header>
-                  <h2>Tempus adipiscing</h2>
+                  <h2>Plano Premium</h2>
                 </header>
                 <p>
-                  Nisl amet dolor sit ipsum veroeros sed blandit consequat
-                  veroeros et magna tempus.
+                  O Plano Premium oferece a experiência definitiva para empreendedores que querem expandir seus negócios e atrair mais clientes.<br>
+                  ✅ Impulsionamento Prioritário – Seu negócio aparece no topo das pesquisas.<br>
+                  ✅ Relatórios Exclusivos – Acompanhe métricas detalhadas sobre o desempenho dos seus anúncios.<br>
+                  ✅ Bônus: Posts nas redes sociais – Promova seu negócio também nas nossas redes oficiais.
                 </p>
               </section>
             </div>
           </div>
           <footer>
             <ul class="actions">
-              <li><a href="#" class="button large">Get Started</a></li>
-              <li><a href="#" class="button alt large">Learn More</a></li>
+              <li><a href="#" class="button large">Plano Básico</a></li>
+              <li><a href="#" class="button alt large">Plano Ouro</a></li>
+              <li><a href="#" class="button alt large">Plano Premium</a></li>
             </ul>
           </footer>
         </section>
       </section>
-
       <!-- Main -->
       <section id="main">
         <div class="container">
@@ -121,20 +111,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic02.jpg" alt=""
+                        ><img src="images/metrologo.png" alt="logo de boate"
                       /></a>
                       <header>
-                        <h3>Ipsum feugiat et dolor</h3>
+                        <h3>Boates</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                         Celebre a noite recifense que mantém uma vida noturna vibrante, unindo tradição e inovação em bares, clubes e eventos 🕺🎶.
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -143,20 +131,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic03.jpg" alt=""
+                        ><img src="images/bares.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Sed etiam lorem nulla</h3>
+                        <h3>Bares</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                        Dos bares clássicos aos espaços alternativos, há sempre um lugar para celebrar, se divertir e brindar à liberdade  🍻🌈.  
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver Sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -165,20 +151,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic04.jpg" alt=""
+                        ><img src="images/restaurante.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Consequat et tempus</h3>
+                        <h3>Restaurantes</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                        Aprecie a gastronomia em espaços acolhedores e vibrantes, onde a diversidade é celebrada com espaços exclusivos 🍽️🍴.
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver Sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -187,20 +171,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic05.jpg" alt=""
+                        ><img src="images/hoteis.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Blandit sed adipiscing</h3>
+                        <h3>Hotéis</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                        Descubra hotéis LGBTQIA+ friendly na capital pernambucana. Viva uma experiência inesquecível, cercado de respeito e diversidade! 🏨🌈.
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver Sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -209,20 +191,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic06.jpg" alt=""
+                        ><img src="images/festas.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Etiam nisl consequat</h3>
+                        <h3>Festas Independentes</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                        Viva a cena underground da cidade com eventos autênticos, diversidade e muita música. Aqui a celebração é livre e vibrante! 🕺🔥.
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver Sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -231,20 +211,18 @@
                   <div class="col-4 col-6-medium col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic07.jpg" alt=""
+                        ><img src="images/cafes.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Dolore nisl feugiat</h3>
+                        <h3>Cafés</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed amet blandit
-                        consequat veroeros lorem blandit adipiscing et feugiat
-                        phasellus tempus dolore ipsum lorem dolore.
+                        Descubra espaços acolhedores e inclusivos, com cafés incríveis, arte e diversidade. Cada xícara é um convite para novas conexões! 🍰💛
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button alt">Find out more</a>
+                            <a href="#" class="button alt">Ver Sugestões</a>
                           </li>
                         </ul>
                       </footer>
@@ -263,31 +241,29 @@
                   <div class="col-6 col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic08.jpg" alt=""
+                        ><img src="images/metropole-4.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Magna tempus consequat</h3>
-                        <p>Posted 45 minutes ago</p>
+                        <h3>Boate Metrópole</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed et blandit
-                        consequat sed veroeros lorem et blandit adipiscing
-                        feugiat phasellus tempus hendrerit, tortor vitae mattis
-                        tempor, sapien sem feugiat sapien, id suscipit magna
-                        felis nec elit. Class aptent taciti sociosqu ad litora
-                        torquent per conubia nostra, per inceptos lorem ipsum
-                        dolor sit amet.
+                        O Club Metrópole, inaugurado em 2002, é a boate mais antiga do Nordeste e a terceira mais antiga do Brasil, atrás apenas da "La Cueva", no Rio de Janeiro, e "Blue Space", em São Paulo. 
+JC
+                      Localizada na Rua das Ninfas, no bairro da Boa Vista, Recife, a Metrópole ocupa o mesmo espaço onde funcionou a pioneira Boate Misty, inaugurada em 1979, que foi um marco para a comunidade LGBTQIA+ da cidade.  
+                      Ao longo de suas duas décadas de existência, a Metrópole se consolidou como um símbolo de resistência e celebração da cultura LGBTQIA+, sendo palco de inúmeros eventos, shows e festas temáticas que atraem público de diversas partes do Brasil. 
+
+                      A casa é reconhecida por sua programação diversificada, que inclui desde música eletrônica até apresentações de artistas populares, como a cantora Gretchen, que se apresentou na comemoração dos 20 anos da boate..
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button icon solid fa-file-alt"
-                              >Continue Reading</a
+                            <a href="#" class="button"
+                              > ⭐Post Patrocinado</a
                             >
                           </li>
                           <li>
                             <a href="#" class="button alt icon solid fa-comment"
-                              >33 comments</a
+                              >Continue lendo</a
                             >
                           </li>
                         </ul>
@@ -297,31 +273,24 @@
                   <div class="col-6 col-12-small">
                     <section class="box">
                       <a href="#" class="image featured"
-                        ><img src="images/pic09.jpg" alt=""
+                        ><img src="images/conchittas.jpg" alt=""
                       /></a>
                       <header>
-                        <h3>Aptent veroeros aliquam</h3>
-                        <p>Posted 45 minutes ago</p>
+                        <h3>Conchittas Bar</h3>
                       </header>
                       <p>
-                        Lorem ipsum dolor sit amet sit veroeros sed et blandit
-                        consequat sed veroeros lorem et blandit adipiscing
-                        feugiat phasellus tempus hendrerit, tortor vitae mattis
-                        tempor, sapien sem feugiat sapien, id suscipit magna
-                        felis nec elit. Class aptent taciti sociosqu ad litora
-                        torquent per conubia nostra, per inceptos lorem ipsum
-                        dolor sit amet.
+                        Inaugurado em 2015, o bar destaca-se por seu ambiente descontraído e acolhedor, oferecendo uma programação diversificada que inclui apresentações de DJs, shows de bandas independentes, exposições e performances teatrais. A decoração é marcada por referências culturais e artísticas, criando um espaço vibrante e inclusivo. O Conchittas Bar é conhecido por seus preços acessíveis em comidas e bebidas, além de promover noites de karaokê que incentivam a interação e diversão entre os frequentadores. O Conchittas Bar, localizado na Avenida Manoel Borba, 709, Boa Vista, Recife, destaca-se por sua decoração alternativa e ambiente acolhedor. O bar oferece uma variedade de pratos e bebidas para todos os gostos, sendo conhecido por seus preços acessíveis. Além disso, o Conchittas é um ponto de encontro popular na cena LGBTQ+ da cidade, proporcionando um ambiente inclusivo e descontraído para seus frequentadores.Além disso o bar é um dos bares mais antigos da rua das ninfas, e começou sendo apenas um espaço na garagem. 
                       </p>
                       <footer>
                         <ul class="actions">
                           <li>
-                            <a href="#" class="button icon solid fa-file-alt"
-                              >Continue Reading</a
+                            <a href="#" class="button"
+                              > ⭐Post Patrocinado</a
                             >
                           </li>
                           <li>
                             <a href="#" class="button alt icon solid fa-comment"
-                              >33 comments</a
+                              >Continue lendo</a
                             >
                           </li>
                         </ul>
@@ -336,7 +305,7 @@
       </section>
 
       <!-- Footer -->
-      <section id="footer">
+      <section id="footer" style="background-color: #302F90;">
         <div class="container">
           <div class="row">
             <div class="col-8 col-12-medium">
@@ -346,43 +315,42 @@
                 </header>
                 <ul class="dates">
                   <li>
-                    <span class="date">Jan <strong>27</strong></span>
-                    <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+                    <span class="date">Fev <strong>27</strong></span>
+                    <h3><a href="https://linktr.ee/golarrole" target="_blank">Gola Rolê</a></h3>
                     <p>
-                      Ipsum dolor sit amet veroeros consequat blandit ipsum
-                      phasellus lorem consequat etiam.
+                      O rolê é aqui, a maior festa da cidade!
                     </p>
                   </li>
                   <li>
-                    <span class="date">Jan <strong>23</strong></span>
-                    <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+                    <span class="date">Fev <strong>14</strong></span>
+                    <a href="https://www.sympla.com.br/evento/abracadabra-sexta-feira-14-fev/2828233" target="_blank">
+                      <h3> Abracadra</h3>
+                    </a>
                     <p>
-                      Blandit phasellus lorem ipsum dolor tempor sapien tortor
-                      hendrerit adipiscing feugiat lorem.
+                      Baile das Drag Queens.
                     </p>
                   </li>
                   <li>
-                    <span class="date">Jan <strong>15</strong></span>
-                    <h3><a href="#">Magna tempus lorem feugiat</a></h3>
+                    <span class="date">Fev <strong>14</strong></span>
+                    <a href="https://www.recifeingressos.com/enquanto-isso-na-sala-da-justica?gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbavla36iH6IyiY8EwPq44i86_F2-qKs3_6skh5LOg5L-fm3c-LeF8vBoCFAEQAvD_BwE" target="_blank">
+                      <h3> Enquanto isso na Sala de Justiça</h3>
+                    </a>
                     <p>
-                      Dolore consequat sed phasellus lorem sed etiam nullam
-                      dolor etiam sed amet sit consequat.
+                      A maior festa a fantasia do Recife.
                     </p>
                   </li>
                   <li>
-                    <span class="date">Jan <strong>12</strong></span>
-                    <h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+                    <span class="date">MAR<strong>4</strong></span>
+                    <h3><a href="https://www.sympla.com.br/evento/carnaval-estacao-da-luz-2025/2643885" target="_blank">Carnaval Estação da Luz</a></h3>
                     <p>
-                      Feugiat lorem dolor sed nullam tempus lorem ipsum dolor
-                      sit amet nullam consequat.
+                      Carnaval em Olinda.
                     </p>
                   </li>
                   <li>
-                    <span class="date">Jan <strong>10</strong></span>
-                    <h3><a href="#">Blandit tempus aliquam?</a></h3>
+                    <span class="date">Fev <strong>15</strong></span>
+                    <h3><a href="https://www.sympla.com.br/evento/match-cmg-edicao-recife/2797325">Match CMG </a></h3>
                     <p>
-                      Feugiat sed tempus blandit tempus adipiscing nisl lorem
-                      ipsum dolor sit amet dolore.
+                      Festa alternativa no Estelita, boate na zona sul de recife.
                     </p>
                   </li>
                 </ul>
@@ -391,145 +359,27 @@
             <div class="col-4 col-12-medium">
               <section>
                 <header>
-                  <h2>What's this all about?</h2>
+                  <h2>Um pouco do Rainbow Connect</h2>
                 </header>
                 <a href="#" class="image featured"
-                  ><img src="images/pic10.jpg" alt=""
+                  ><img src="images/logo2.png" alt=""
                 /></a>
                 <p>
-                  This is <strong>Dopetrope</strong> a free, fully responsive
-                  HTML5 site template by
-                  <a href="http://twitter.com/ajlkn">AJ</a> for
-                  <a href="http://html5up.net/">HTML5 UP</a> It's released for
-                  free under the
-                  <a href="http://html5up.net/license/"
-                    >Creative Commons Attribution</a
-                  >
-                  license so feel free to use it for any personal or commercial
-                  project &ndash; just don't forget to credit us!
+                  O Rainbow Connect nasceu em um hackathon com o propósito de impulsionar empreendimentos LGBTQIAPN+. <br> Com uma equipe de quatro integrantes, o projeto foi desenvolvido com foco na inclusão, explorando um setor muitas vezes negligenciado: o turismo. <br> Afinal, essa é uma das maiores fontes de renda e oportunidades, merecendo mais visibilidade e acessibilidade para a comunidade.
                 </p>
                 <footer>
                   <ul class="actions">
-                    <li><a href="#" class="button">Find out more</a></li>
+                    <li><a href="#" class="button">Saiba mais</a></li>
                   </ul>
                 </footer>
               </section>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <section>
-                <header>
-                  <h2>Tempus consequat</h2>
-                </header>
-                <ul class="divided">
-                  <li>
-                    <a href="#">Lorem ipsum dolor sit amet sit veroeros</a>
-                  </li>
-                  <li>
-                    <a href="#">Sed et blandit consequat sed tlorem blandit</a>
-                  </li>
-                  <li>
-                    <a href="#">Adipiscing feugiat phasellus sed tempus</a>
-                  </li>
-                  <li>
-                    <a href="#">Hendrerit tortor vitae mattis tempor sapien</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      >Sem feugiat sapien id suscipit magna felis nec</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#">Elit class aptent taciti sociosqu ad litora</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <section>
-                <header>
-                  <h2>Ipsum et phasellus</h2>
-                </header>
-                <ul class="divided">
-                  <li>
-                    <a href="#">Lorem ipsum dolor sit amet sit veroeros</a>
-                  </li>
-                  <li>
-                    <a href="#">Sed et blandit consequat sed tlorem blandit</a>
-                  </li>
-                  <li>
-                    <a href="#">Adipiscing feugiat phasellus sed tempus</a>
-                  </li>
-                  <li>
-                    <a href="#">Hendrerit tortor vitae mattis tempor sapien</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      >Sem feugiat sapien id suscipit magna felis nec</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#">Elit class aptent taciti sociosqu ad litora</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-4 col-12-medium">
-              <section>
-                <header>
-                  <h2>Vitae tempor lorem</h2>
-                </header>
-                <ul class="social">
-                  <li>
-                    <a class="icon brands fa-facebook-f" href="#"
-                      ><span class="label">Facebook</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="icon brands fa-twitter" href="#"
-                      ><span class="label">Twitter</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="icon brands fa-dribbble" href="#"
-                      ><span class="label">Dribbble</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="icon brands fa-tumblr" href="#"
-                      ><span class="label">Tumblr</span></a
-                    >
-                  </li>
-                  <li>
-                    <a class="icon brands fa-linkedin-in" href="#"
-                      ><span class="label">LinkedIn</span></a
-                    >
-                  </li>
-                </ul>
-                <ul class="contact">
-                  <li>
-                    <h3>Address</h3>
-                    <p>
-                      Untitled Incorporated<br />
-                      1234 Somewhere Road Suite<br />
-                      Nashville, TN 00000-0000
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Mail</h3>
-                    <p><a href="#">someone@untitled.tld</a></p>
-                  </li>
-                  <li>
-                    <h3>Phone</h3>
-                    <p>(800) 000-0000</p>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-12">
+            
+            <div class="col-10">
               <!-- Copyright -->
               <div id="copyright">
                 <ul class="links">
-                  <li>&copy; Untitled. All rights reserved.</li>
+                  <li>&copy; Desenvolvido por Natália Santos.</li>
                   <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
               </div>
@@ -546,5 +396,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/acessibilidade.js"></script>
   </body>
 </html>

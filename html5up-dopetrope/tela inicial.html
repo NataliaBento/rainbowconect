@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
     <link rel="stylesheet" href="assets/css/telainicial.css" />
+    <link rel="stylesheet" href="assets/css/acessibilidade.css">
   </head>
   <body>
+    <!-- Botão de Acessibilidade -->
+<button id="acessibilidadeBtn" class="acessibilidade-btn">♿</button>
+
+<!-- Menu de Acessibilidade -->
+<div id="acessibilidadeMenu" class="acessibilidade-menu">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
+    <button onclick="resetarAcessibilidade()">Redefinir</button>
+</div>
+
     <div class="container">
       <!-- Lado esquerdo: Imagem -->
       <div class="left">
@@ -59,5 +73,6 @@
     </div>
 
     <script src="assets/js/telainicial.js"></script>
+    <script src="assets/js/acessibilidade.js"></script>
   </body>
 </html>
