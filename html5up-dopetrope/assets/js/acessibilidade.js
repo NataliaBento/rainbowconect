@@ -2,32 +2,38 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuAcessibilidade = document.getElementById("acessibilidadeMenu");
     let botaoAcessibilidade = document.getElementById("acessibilidadeBtn");
 
-    botaoAcessibilidade.addEventListener("click", function () {
-        menuAcessibilidade.style.display = menuAcessibilidade.style.display === "block" ? "none" : "block";
-    });
+    if (menuAcessibilidade && botaoAcessibilidade) {
+        botaoAcessibilidade.addEventListener("click", function () {
+            
+            menuAcessibilidade.classList.toggle("ativo");
+        });
+    }
 });
 
-// Funções de acessibilidade
+
 function aumentarFonte() {
-    document.body.style.fontSize = "larger";
+    let body = document.body;
+    let estiloAtual = window.getComputedStyle(body).fontSize;
+    let tamanhoAtual = parseFloat(estiloAtual);
+    body.style.fontSize = (tamanhoAtual + 2) + "px";
 }
 
 function diminuirFonte() {
-    document.body.style.fontSize = "smaller";
+    let body = document.body;
+    let estiloAtual = window.getComputedStyle(body).fontSize;
+    let tamanhoAtual = parseFloat(estiloAtual);
+    body.style.fontSize = (tamanhoAtual - 2) + "px";
 }
 
 function modoAltoContraste() {
-    document.body.style.background = "#000";
-    document.body.style.color = "#fff";
+    document.body.classList.toggle("alto-contraste");
 }
 
 function resetarAcessibilidade() {
     document.body.style.fontSize = "";
-    document.body.style.background = "";
-    document.body.style.color = "";
+    document.body.classList.remove("alto-contraste");
 }
 
-// Controle do Leitor de Tela
 let speech = new SpeechSynthesisUtterance();
 let leitorAtivo = false;
 
@@ -40,7 +46,7 @@ function ativarLeitorDeTela() {
         speechSynthesis.speak(speech);
         leitorAtivo = true;
     } else {
-        speechSynthesis.cancel(); // Para a leitura
+        speechSynthesis.cancel();
         leitorAtivo = false;
     }
 }

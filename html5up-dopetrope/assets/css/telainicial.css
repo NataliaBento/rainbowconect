@@ -17,7 +17,7 @@ html {
   width: 100vw;
 }
 
-/* Lado esquerdo: Imagem */
+
 .left {
   width: 50%;
   height: 100%;
@@ -33,7 +33,7 @@ html {
   object-fit: cover;
 }
 
-/* Lado direito: Formulário */
+
 .right {
   width: 50%;
   height: 100%;
@@ -45,7 +45,7 @@ html {
   padding: 40px;
 }
 
-/* Botão deslizante */
+
 .toggle-container {
   width: 300px;
   height: 40px;
@@ -90,7 +90,7 @@ html {
   z-index: 0;
 }
 
-/* Inputs e Botão */
+
 .input-group {
   margin-bottom: 20px;
   width: 100%;
@@ -129,7 +129,7 @@ button:hover {
   background: #1c6dd0;
 }
 
-/* Botão Google */
+
 .google-btn {
   background: #db4437;
   margin-top: 10px;
@@ -139,7 +139,7 @@ button:hover {
   background: #b73529;
 }
 
-/* Aviso de Cadastro */
+
 .register-message {
   margin-top: 15px;
   font-size: 14px;
@@ -156,7 +156,7 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
