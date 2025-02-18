@@ -2282,6 +2282,36 @@ input, select, textarea {
     background-color: #000000; 
 }
 
+.first .icon.featured {
+	background-color: #cd7f32;  
+}
+
+
+.first .icon.featured:after {
+	border-top-color: #cd7f32; 
+}
+
+
+.middle .icon.featured {
+	background-color: #FFD700 
+}
+
+
+.middle .icon.featured:after {
+	border-top-color: #FFD700; 
+}
+
+
+.last .icon.featured {
+	background-color: #2F4F4F; 
+}
+
+
+.last .icon.featured:after {
+	border-top-color: #2F4F4F; 
+}
+
+
 
 /* Main */
 
@@ -2440,35 +2470,7 @@ input, select, textarea {
 				}
 
 				
-		.first .icon.featured {
-			background-color: #cd7f32;  
-		}
-
 		
-		.first .icon.featured:after {
-			border-top-color: #cd7f32; 
-		}
-
-		
-		.middle .icon.featured {
-			background-color: #FFD700 
-		}
-
-		
-		.middle .icon.featured:after {
-			border-top-color: #FFD700; 
-		}
-
-		
-		.last .icon.featured {
-			background-color: #2F4F4F; 
-		}
-
-		
-		.last .icon.featured:after {
-			border-top-color: #2F4F4F; 
-		}
-
 
 		/* Main */
 
