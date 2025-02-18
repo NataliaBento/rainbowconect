@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="html5up-dopetrope/assets/css/telainicial.css" />
+    <link rel="stylesheet" href="html5up-dopetrope/assets/css/acessibilidade.css">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Botão de Acessibilidade -->
+<button id="acessibilidadeBtn" class="acessibilidade-btn">♿</button>
+
+<!-- Menu de Acessibilidade -->
+<div id="acessibilidadeMenu" class="acessibilidade-menu">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
+    <button onclick="resetarAcessibilidade()">Redefinir</button>
+</div>
+
+    <div class="container">
+     
+      <div class="left">
+        <img src="html5up-dopetrope/images/logo2.png" alt="Logo da Empresa" />
+      </div>
+
+      <div class="right">
+        <h1>Escolha seu perfil</h1>
+        <br>
+        <div class="toggle-container" id="toggleContainer">
+          <span class="option-left">Viajante</span>
+          <span class="option-right">Empreendedor</span>
+          <div class="toggle-btn" id="toggleBtn"></div>
+        </div>
+
+        <h2 id="loginTitle">Login - Viajante</h2>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="identifier" id="identifierLabel">E-mail</label>
+            <input
+              type="text"
+              id="identifier"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <button type="submit">Entrar</button>
+
+          <button type="button" id="googleLogin" class="google-btn">
+            Entrar com Google
+          </button>
+
+          <p class="register-message">
+            Ainda não tem cadastro? <a href="#">Clique aqui e cadastre-se</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="html5up-dopetrope/assets/js/telainicial.js"></script>
+    <script src="html5up-dopetrope/assets/js/acessibilidade.js"></script>
+  </body>
+</html>
