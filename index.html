@@ -1,353 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>Rainbow Connect</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="html5up-dopetrope/assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="html5up-dopetrope/assets/css/telainicial.css" />
     <link rel="stylesheet" href="html5up-dopetrope/assets/css/acessibilidade.css">
-    <link rel="icon" href="html5up-dopetrope/assets/favicon_io/favicon-32x32.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon">
   </head>
-  <body class="homepage is-preload">
-        
-    <button id="acessibilidadeBtn" class="acessibilidade-btn">
-      <i class="fa-solid fa-wheelchair"></i>
-  </button>
-  
-  <!-- Menu de Acessibilidade -->
-  <div id="acessibilidadeMenu" class="acessibilidade-menu">
-      <h3>Acessibilidade</h3>
-      <button onclick="aumentarFonte()">Aumentar Fonte</button>
-      <button onclick="diminuirFonte()">Diminuir Fonte</button>
-      <button onclick="modoAltoContraste()">Alto Contraste</button>
-      <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
-      <button onclick="resetarAcessibilidade()">Redefinir</button>
-  </div>
-  
-    <div id="page-wrapper">
-       
-       <section id="header" style="background-color: #302F90;">
-        <h1 style="color: aliceblue; margin: 24px;">Visite Lugares que Celebram Você!</h1>
+  <body>
+    <!-- Botão de Acessibilidade -->
+<button id="acessibilidadeBtn" class="acessibilidade-btn">♿</button>
 
-        <section id="banner">
-          
-          <nav class="menu-banner">
-            <a href="#main">Categorias</a>
-            <a href="#footer">Eventos</a>
-            <a href="#major">Sobre</a>
-          </nav>
-          
-          <div class="logo-container">
-            <img src="html5up-dopetrope/images/logosemfundo.png" alt="Rainbow Connect Logo" class="logo">
-          </div>
+<!-- Menu de Acessibilidade -->
+<div id="acessibilidadeMenu" class="acessibilidade-menu">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="modoAltoContraste()">Alto Contraste</button>
+    <button onclick="ativarLeitorDeTela()">Leitor de Tela</button>
+    <button onclick="resetarAcessibilidade()">Redefinir</button>
+</div>
 
-        </section>
+    <div class="container">
+     
+      <div class="left">
+        <img src="html5up-dopetrope/images/logo2.png" alt="Logo da Empresa" />
+      </div>
 
-      <section id="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div id="dvd-icon" class="animacao">
-                <i class="fa-solid fa-flag rainbow-icon"></i>
-            </div>
-              <section>
-                <header class="major">
-                  <h2>Categorias</h2>
-                </header>
-                <div class="row">
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/metrologo.png" alt="logo de boate"
-                      /></a>
-                      <header>
-                        <h3>Boates</h3>
-                      </header>
-                      <p>
-                         Celebre a noite recifense que mantém uma vida noturna vibrante, unindo tradição e inovação em bares, clubes e eventos 🕺🎶.
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/bares.jpg" alt="imagem de bares"
-                      /></a>
-                      <header>
-                        <h3>Bares</h3>
-                      </header>
-                      <p>
-                        Dos bares clássicos aos espaços alternativos, há sempre um lugar para celebrar, se divertir e brindar à liberdade  🍻🌈.  
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver Sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/restaurante.jpg" alt="imagem de um restaurante"
-                      /></a>
-                      <header>
-                        <h3>Restaurantes</h3>
-                      </header>
-                      <p>
-                        Aprecie a gastronomia em espaços acolhedores e vibrantes, onde a diversidade é celebrada com espaços exclusivos 🍽️🍴.
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver Sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/hoteis.jpg" alt="imagem de hotel"
-                      /></a>
-                      <header>
-                        <h3>Hotéis</h3>
-                      </header>
-                      <p>
-                        Descubra hotéis LGBTQIA+ friendly na capital pernambucana. Viva uma experiência inesquecível, cercado de respeito e diversidade! 🏨🌈.
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver Sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/festas.jpg" alt="imagem generica de festa"
-                      /></a>
-                      <header>
-                        <h3>Festas Independentes</h3>
-                      </header>
-                      <p>
-                        Viva a cena underground da cidade com eventos autênticos, diversidade e muita música. Aqui a celebração é livre e vibrante! 🕺🔥.
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver Sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-4 col-6-medium col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/cafes.jpg" alt="imagem de um café"
-                      /></a>
-                      <header>
-                        <h3>Cafés</h3>
-                      </header>
-                      <p>
-                        Descubra espaços acolhedores e inclusivos, com cafés incríveis, arte e diversidade. Cada xícara é um convite para novas conexões! 🍰💛
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button alt">Ver Sugestões</a>
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="col-12">
-
-              <section>
-                <header class="major">
-                  <h2>Curiosidades</h2>
-                </header>
-                <div class="row">
-                  <div class="col-6 col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/metropole-4.jpg" alt="imagem da entrada da metropole"
-                      /></a>
-                      <header>
-                        <h3>Boate Metrópole</h3>
-                      </header>
-                      <p>
-                        O Club Metrópole, inaugurado em 2002, é a boate mais antiga do Nordeste e a terceira mais antiga do Brasil, atrás apenas da "La Cueva", no Rio de Janeiro, e "Blue Space", em São Paulo. 
-JC
-                      Localizada na Rua das Ninfas, no bairro da Boa Vista, Recife, a Metrópole ocupa o mesmo espaço onde funcionou a pioneira Boate Misty, inaugurada em 1979, que foi um marco para a comunidade LGBTQIA+ da cidade.  
-                      Ao longo de suas duas décadas de existência, a Metrópole se consolidou como um símbolo de resistência e celebração da cultura LGBTQIA+, sendo palco de inúmeros eventos, shows e festas temáticas que atraem público de diversas partes do Brasil. 
-
-                      A casa é reconhecida por sua programação diversificada, que inclui desde música eletrônica até apresentações de artistas populares, como a cantora Gretchen, que se apresentou na comemoração dos 20 anos da boate..
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button"
-                              > ⭐Post Patrocinado</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="button alt icon solid fa-comment"
-                              >Continue lendo</a
-                            >
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                  <div class="col-6 col-12-small">
-                    <section class="box">
-                      <a href="#" class="image featured"
-                        ><img src="html5up-dopetrope/images/conchittas.jpg" alt="imagem da entrada do bar conchittas"
-                      /></a>
-                      <header>
-                        <h3>Conchittas Bar</h3>
-                      </header>
-                      <p>
-                        Inaugurado em 2015, o bar destaca-se por seu ambiente descontraído e acolhedor, oferecendo uma programação diversificada que inclui apresentações de DJs, shows de bandas independentes, exposições e performances teatrais. A decoração é marcada por referências culturais e artísticas, criando um espaço vibrante e inclusivo. O Conchittas Bar é conhecido por seus preços acessíveis em comidas e bebidas, além de promover noites de karaokê que incentivam a interação e diversão entre os frequentadores. O Conchittas Bar, localizado na Avenida Manoel Borba, 709, Boa Vista, Recife, destaca-se por sua decoração alternativa e ambiente acolhedor. O bar oferece uma variedade de pratos e bebidas para todos os gostos, sendo conhecido por seus preços acessíveis. Além disso, o Conchittas é um ponto de encontro popular na cena LGBTQ+ da cidade, proporcionando um ambiente inclusivo e descontraído para seus frequentadores.Além disso o bar é um dos bares mais antigos da rua das ninfas, e começou sendo apenas um espaço na garagem. 
-                      </p>
-                      <footer>
-                        <ul class="actions">
-                          <li>
-                            <a href="#" class="button"
-                              > ⭐Post Patrocinado</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="button alt icon solid fa-comment"
-                              >Continue lendo</a
-                            >
-                          </li>
-                        </ul>
-                      </footer>
-                    </section>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
+      <div class="right">
+        <h1>Escolha seu perfil</h1>
+        <br>
+        <div class="toggle-container" id="toggleContainer">
+          <span class="option-left">Viajante</span>
+          <span class="option-right">Empreendedor</span>
+          <div class="toggle-btn" id="toggleBtn"></div>
         </div>
-      </section>
 
-      <!-- Footer -->
-      <section id="footer" style="background-color: #302F90;">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 col-12-medium">
-              <section>
-                <header>
-                  <h2>Eventos em sua região</h2>
-                </header>
-                <ul class="dates">
-                  <li>
-                    <span class="date">Fev <strong>27</strong></span>
-                    <h3><a href="https://linktr.ee/golarrole" target="_blank">Gola Rolê</a></h3>
-                    <p>
-                      O rolê é aqui, a maior festa da cidade!
-                    </p>
-                  </li>
-                  <li>
-                    <span class="date">Fev <strong>14</strong></span>
-                    <a href="https://www.sympla.com.br/evento/abracadabra-sexta-feira-14-fev/2828233" target="_blank">
-                      <h3> Abracadra</h3>
-                    </a>
-                    <p>
-                      Baile das Drag Queens.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="date">Fev <strong>14</strong></span>
-                    <a href="https://www.recifeingressos.com/enquanto-isso-na-sala-da-justica?gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbavla36iH6IyiY8EwPq44i86_F2-qKs3_6skh5LOg5L-fm3c-LeF8vBoCFAEQAvD_BwE" target="_blank">
-                      <h3> Enquanto isso na Sala de Justiça</h3>
-                    </a>
-                    <p>
-                      A maior festa a fantasia do Recife.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="date">MAR<strong>4</strong></span>
-                    <h3><a href="https://www.sympla.com.br/evento/carnaval-estacao-da-luz-2025/2643885" target="_blank">Carnaval Estação da Luz</a></h3>
-                    <p>
-                      Carnaval em Olinda.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="date">Fev <strong>15</strong></span>
-                    <h3><a href="https://www.sympla.com.br/evento/match-cmg-edicao-recife/2797325">Match CMG </a></h3>
-                    <p>
-                      Festa alternativa no Estelita, boate na zona sul de recife.
-                    </p>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-4 col-12-medium">
-              <section>
-                <header>
-                  <h2>Um pouco do Rainbow Connect</h2>
-                </header>
-                <a href="#" class="image featured"
-                  ><img src="html5up-dopetrope/images/logo2.png" alt="logo do rainbow connect"
-                /></a>
-                <p>
-                  O Rainbow Connect nasceu em um hackathon com o propósito de impulsionar empreendimentos LGBTQIAPN+. <br> Com uma equipe de quatro integrantes, o projeto foi desenvolvido com foco na inclusão, explorando um setor muitas vezes negligenciado: o turismo. <br> Afinal, essa é uma das maiores fontes de renda e oportunidades, merecendo mais visibilidade e acessibilidade para a comunidade.
-                </p>
-                <footer>
-                  <ul class="actions">
-                    <li><a href="#" class="button">Saiba mais</a></li>
-                  </ul>
-                </footer>
-              </section>
-            </div>
-            
-            <div class="col-10">
-             
-              <div id="copyright">
-                <ul class="links">
-                  <li>&copy; Desenvolvido por Natália Santos.</li>
-                  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-              </div>
-            </div>
+        <h2 id="loginTitle">Login - Viajante</h2>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="identifier" id="identifierLabel">E-mail</label>
+            <input
+              type="text"
+              id="identifier"
+              placeholder="Digite seu e-mail"
+            />
           </div>
-        </div>
-      </section>
+
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <button type="submit">Entrar</button>
+
+          <button type="button" id="googleLogin" class="google-btn">
+            Entrar com Google
+          </button>
+
+          <p class="register-message">
+            Ainda não tem cadastro? <a href="#">Clique aqui e cadastre-se</a>
+          </p>
+        </form>
+      </div>
     </div>
 
-    <script src="html5up-dopetrope/assets/js/jquery.min.js"></script>
-    <script src="html5up-dopetrope/assets/js/jquery.dropotron.min.js"></script>
-    <script src="html5up-dopetrope/assets/js/browser.min.js"></script>
-    <script src="html5up-dopetrope/assets/js/breakpoints.min.js"></script>
-    <script src="html5up-dopetrope/assets/js/util.js"></script>
-    <script src="html5up-dopetrope/assets/js/main.js"></script>
+    <script src="html5up-dopetrope/assets/js/index.js"></script>
     <script src="html5up-dopetrope/assets/js/acessibilidade.js"></script>
-    <script src="html5up-dopetrope/assets/js/animacao.js"></script>
   </body>
 </html>
