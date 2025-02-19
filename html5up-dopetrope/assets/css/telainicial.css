@@ -23,15 +23,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Garante que nada vaze para fora */
+  overflow: hidden; 
 }
 
 .left picture,
 .left img {
   width: 100%;
-  height: 100vh; /* Garante que a imagem ocupe toda a altura */
-  object-fit: cover; /* Faz a imagem preencher toda a div sem distorcer */
+  height: 100vh; 
+  object-fit: cover; 
 }
+
 
 
 
